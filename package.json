@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/TimothyOsborn/Javascript-Components#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "@babel/core": "^7.8.7",
     "@webcomponents/webcomponentsjs": "^2.4.2",
     "babel": "^6.23.0",
@@ -37,5 +38,8 @@
   "dependencies": {
     "@types/lodash": "^4.14.149",
     "lodash": "^4.17.15"
+=======
+    "@webcomponents/webcomponentsjs": "^2.4.2"
+>>>>>>> finally got a typescript config working. Did not realise Typescript Custom Elements would not work targeting ES5 without a polyfill. TODO: Add required polyfills
   }
 }
