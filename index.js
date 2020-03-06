@@ -3,3 +3,5 @@ class CardOptIcon extends HTMLElement {
     this.innerHTML = '<h1>Hello World</h1>';
   }
 }
+
+customElements.define('card-icon', CardOptIcon);
