@@ -9,6 +9,7 @@
     "preserveConstEnums": true,
     "sourceMap": true
   },
+<<<<<<< HEAD
   "files": [
     "./src/components/Banner/index.ts",
     "./src/components/Buttons/index.ts",
@@ -18,4 +19,7 @@
     "src/constants/colours/colours.ts",
     "src/constants/theme/theme.ts"
   ]
+=======
+  "files": ["src/components/Banner/index.ts"]
+>>>>>>> added sample test html against banner component
 }
