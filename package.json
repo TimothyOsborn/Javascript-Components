@@ -1,0 +1,22 @@
+{
+  "name": "javascript-components",
+  "version": "1.0.0",
+  "description": "Library of Node Javascript Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimothyOsborn/Javascript-Components.git"
+  },
+  "author": "Timothy Tomazi-Osborn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimothyOsborn/Javascript-Components/issues"
+  },
+  "homepage": "https://github.com/TimothyOsborn/Javascript-Components#readme",
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.4.2"
+  }
+}
