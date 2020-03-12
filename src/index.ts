@@ -1,4 +1,5 @@
 import * as _ from 'lodash';
+import './index.css';
 
 const homepage = () => {
   const element = document.createElement('div');

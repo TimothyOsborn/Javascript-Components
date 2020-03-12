@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _ = require("lodash");
+require("./index.css");
 const homepage = () => {
     const element = document.createElement('div');
     element.innerHTML = `
