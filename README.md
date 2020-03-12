@@ -6,7 +6,8 @@ Open Source library of commonly used core javascript components for ease of maki
 
 - Clone Repo
 - From base folder run
-  - npm run init
+  - chmod 755 ./init.sh
+  - ./init.sh
 - enjoy
 
 - TODO: add setup documentation
