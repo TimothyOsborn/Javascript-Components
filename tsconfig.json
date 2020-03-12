@@ -9,5 +9,5 @@
     "preserveConstEnums": true,
     "sourceMap": true
   },
-  "files": ["src/components/Banner/index.ts"]
+  "files": ["./src/components/Banner/index.ts", "./src/index.ts"]
 }
