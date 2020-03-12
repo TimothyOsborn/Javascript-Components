@@ -1,12 +1,6 @@
 class BannerElement extends HTMLElement {
   initialHTML: string;
   initialText: string;
-<<<<<<< HEAD
-=======
-  static get observedAttributes() {
-    return ['cat'];
-  }
->>>>>>> added sample test html against banner component
 
   constructor() {
     super();
@@ -31,7 +25,6 @@ class BannerElement extends HTMLElement {
       () =>
         (this.innerHTML = `
 <<<<<<< HEAD
-<<<<<<< HEAD
         <div class="container">
           <h3>${this.getAttribute('cat')}</h3>
           <h2>${this.initialText}</h2>
@@ -39,9 +32,6 @@ class BannerElement extends HTMLElement {
           <h4>${this.hasAttribute('dog') ? 'pineapple' : 'pizza'}</h4>
 =======
         <div>
-=======
-        <div class="container">
->>>>>>> Added initial webpack config and testing
           <h3>${this.getAttribute('cat')}</h3>
           <h2>${this.initialText}</h2>
           <h1>${this.initialHTML}</h1>
