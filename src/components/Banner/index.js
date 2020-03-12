@@ -20,7 +20,7 @@ class BannerElement extends HTMLElement {
     }
     connectedCallback() {
         setTimeout(() => (this.innerHTML = `
-        <div>
+        <div class="container">
           <h3>${this.getAttribute('cat')}</h3>
           <h2>${this.initialText}</h2>
           <h1>${this.initialHTML}</h1>
