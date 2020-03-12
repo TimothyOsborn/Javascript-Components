@@ -4,6 +4,11 @@ Open Source library of commonly used core javascript components for ease of maki
 
 ## Setup
 
+- Clone Repo
+- From base folder run
+  - npm run init
+- enjoy
+
 - TODO: add setup documentation
 
 ## Futures
