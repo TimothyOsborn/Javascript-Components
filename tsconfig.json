@@ -9,5 +9,10 @@
     "preserveConstEnums": true,
     "sourceMap": true
   },
-  "files": ["./src/components/Banner/index.ts", "./src/index.ts"]
+  "files": [
+    "./src/components/Banner/index.ts",
+    "./src/index.ts",
+    "./src/constants/constants.ts",
+    "./src/constants/colours.ts"
+  ]
 }
