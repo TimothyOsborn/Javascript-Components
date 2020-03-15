@@ -4,9 +4,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: './css/styles.css',
+    }),
+  ],
   output: {
-    filename: 'main.js',
+    filename: './js/main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -18,16 +22,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
-        ],
+        use: ['style-loader', 'css-loader'],
         include: /^((?!\.module).)*\.css$/,
       },
       {
