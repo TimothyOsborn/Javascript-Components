@@ -12,6 +12,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: 'babel-loader',
+        include: /^((?!\.test\.).)*\.js$/,
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
@@ -23,12 +28,12 @@ module.exports = {
             },
           },
         ],
-        include: /\.module\.css$/,
+        include: /^((?!\.module).)*\.css$/,
       },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        exclude: /\.module\.css$/,
+        include: /\.module\.css$/,
       },
       {
         test: /\.jpg$/,
