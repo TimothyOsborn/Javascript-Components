@@ -13,6 +13,10 @@ let colours: JsonType = {
   FONT_LIGHT: '#484848',
   FONT: '#212121',
   FONT_DARK: '#000000',
+  BACKGROUND_WHITE: '#ffffff',
+  BACKGROUND_PRIMARY: '#f5f5f5',
+  BACKGROUND_WARM: '#fffaf1',
+  BACKGROUND_DARK: '#c2c2c2',
 };
 
 export default colours;
