@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+<<<<<<< HEAD
 require("./buttons.module.scss");
+=======
+require("./buttons.module.css");
+>>>>>>> Working on Button Component, will start branching for next component
 class ButtonElement extends HTMLElement {
     constructor() {
         super();

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import './buttons.module.scss';
+=======
+import './buttons.module.css';
+>>>>>>> Working on Button Component, will start branching for next component
 
 class ButtonElement extends HTMLElement {
   onClick: string;
