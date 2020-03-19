@@ -11,8 +11,10 @@
   },
   "files": [
     "./src/components/Banner/index.ts",
+    "./src/components/Buttons/index.ts",
     "./src/index.ts",
     "./src/constants/constants.ts",
-    "./src/constants/colours.ts"
+    "./src/constants/colours.ts",
+    "./src/constants/theme.ts"
   ]
 }

@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 import './index.css';
 import './index.module.css';
+import './components/Banner/index';
 
 const homepage = () => {
   const element = document.createElement('div');
@@ -10,6 +11,9 @@ const homepage = () => {
       <h1>Using JS Entry Point</h1>
         <h3>${_.join(['Hello', 'World'], ' ')}
     </div>
+    <banner-custom cat='cat attribute' dog>
+      Hello Banner Custom
+    </banner-custom>
     `;
   return element;
 };

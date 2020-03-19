@@ -1,4 +1,4 @@
-class BannerElement extends HTMLElement {
+class ButtonElement extends HTMLElement {
     constructor() {
         super();
         setTimeout(() => {
@@ -29,5 +29,5 @@ class BannerElement extends HTMLElement {
         `));
     }
 }
-customElements.define('banner-custom', BannerElement);
+customElements.define('button-custom', ButtonElement);
 //# sourceMappingURL=index.js.map
