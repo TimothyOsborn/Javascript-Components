@@ -14,6 +14,9 @@ const homepage = () => {
     <banner-custom cat='cat attribute' dog>
       Hello Banner Custom
     </banner-custom>
+    <banner-custom cat='not a cat'>
+      Hello second instance
+    </banner-custom>
     `;
   return element;
 };
