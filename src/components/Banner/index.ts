@@ -1,9 +1,6 @@
 class BannerElement extends HTMLElement {
   initialHTML: string;
   initialText: string;
-  static get observedAttributes() {
-    return ['cat'];
-  }
 
   constructor() {
     super();
@@ -31,6 +28,7 @@ class BannerElement extends HTMLElement {
           <h3>${this.getAttribute('cat')}</h3>
           <h2>${this.initialText}</h2>
           <h1>${this.initialHTML}</h1>
+          <h4>${this.hasAttribute('dog') ? 'pineapple' : 'pizza'}</h4>
         </div>
         `),
     );

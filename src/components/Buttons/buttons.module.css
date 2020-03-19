@@ -1,0 +1,24 @@
+.container-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-button > .inner {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 3px 5px 10px black, -3px -5px 10px black,
+    3px 3px 10px lightblue inset, -5px -3px 10px lavender inset;
+}
+
+.button-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+}
+
+.container-button > .inner:hover {
+  color: teal;
+  box-shadow: 10px 10px 20px blue;
+}
