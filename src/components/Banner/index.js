@@ -6,9 +6,6 @@ class BannerElement extends HTMLElement {
             this.initialText = this.innerText;
         });
     }
-    static get observedAttributes() {
-        return ['cat', 'dog'];
-    }
     attributeChangedCallback(name, oldValue, newValue) {
         console.log('in attributechangedcallback', name, oldValue, newValue);
         if (name === 'cat' && oldValue !== null && oldValue !== newValue) {

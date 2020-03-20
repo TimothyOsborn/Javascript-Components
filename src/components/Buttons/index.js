@@ -7,7 +7,7 @@ class ButtonElement extends HTMLElement {
         });
     }
     static get observedAttributes() {
-        return ['cat', 'dog'];
+        return ['cat'];
     }
     attributeChangedCallback(name, oldValue, newValue) {
         console.log('in attributechangedcallback', name, oldValue, newValue);

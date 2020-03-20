@@ -1,9 +1,6 @@
 class BannerElement extends HTMLElement {
   initialHTML: string;
   initialText: string;
-  static get observedAttributes() {
-    return ['cat', 'dog'];
-  }
 
   constructor() {
     super();
