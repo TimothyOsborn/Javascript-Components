@@ -1,40 +1,41 @@
+import './buttons.module.css';
+
 class ButtonElement extends HTMLElement {
-  initialHTML: string;
-  initialText: string;
+  onClick: string;
+  title: string;
   static get observedAttributes() {
-    return ['cat'];
+    return ['title'];
   }
 
   constructor() {
     super();
     setTimeout(() => {
-      this.initialHTML = this.innerHTML;
-      this.initialText = this.innerText;
+      this.title = this.getAttribute('title');
+      this.onClick = this.getAttribute('action');
+      this.addEventListener('click', () => this.onClickHandler());
     });
   }
 
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    console.log('in attributechangedcallback', name, oldValue, newValue);
-    if (name === 'cat' && oldValue !== null && oldValue !== newValue) {
-      console.log('checking before clearing', this.innerHTML, this.innerText);
-      this.innerHTML = '';
+    if (name === 'title' && oldValue !== null && oldValue !== newValue) {
       this.connectedCallback();
-      console.log('checking after clearing', this.innerHTML, this.innerText);
     }
   }
 
+  onClickHandler() {
+    eval(this.onClick);
+  }
+
   connectedCallback() {
-    setTimeout(
-      () =>
-        (this.innerHTML = `
-        <div class="container">
-          <h3>${this.getAttribute('cat')}</h3>
-          <h2>${this.initialText}</h2>
-          <h1>${this.initialHTML}</h1>
-          <h4>${this.getAttribute('dog')}</h4>
+    setTimeout(() => {
+      this.innerHTML = `
+        <div class="container-button">
+          <div class="inner button-title">
+            ${this.title}
+          </div>
         </div>
-        `),
-    );
+        `;
+    });
   }
 }
 
