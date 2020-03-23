@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./buttons.module.css");
+require("./buttons.module.scss");
 class ButtonElement extends HTMLElement {
     constructor() {
         super();

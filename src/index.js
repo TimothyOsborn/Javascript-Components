@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./index.css");
-require("./index.module.css");
+require("./index.scss");
+require("./index.module.scss");
 require("./components/Banner/index");
 require("./components/Buttons/index");
 const homepage = () => {
