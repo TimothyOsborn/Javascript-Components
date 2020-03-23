@@ -1,5 +1,5 @@
-import './index.css';
-import './index.module.css';
+import './index.scss';
+import './index.module.scss';
 import './components/Banner/index';
 import './components/Buttons/index';
 

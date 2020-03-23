@@ -21,14 +21,14 @@ module.exports = {
         include: /^((?!\.test\.).)*\.js$/,
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        include: /^((?!\.module).)*\.css$/,
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        include: /^((?!\.module).)*\.scss$/,
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        include: /\.module\.css$/,
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        include: /\.module\.scss$/,
       },
       {
         test: /\.jpg$/,

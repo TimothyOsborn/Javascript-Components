@@ -1,4 +1,4 @@
-import './buttons.module.css';
+import './buttons.module.scss';
 
 class ButtonElement extends HTMLElement {
   onClick: string;

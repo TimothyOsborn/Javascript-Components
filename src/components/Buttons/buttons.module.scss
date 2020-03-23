@@ -1,0 +1,25 @@
+.container-button {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+
+  > .inner {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px black, -3px -3px 6px black,
+      3px 3px 10px lightblue inset, -5px -3px 10px lavender inset;
+  }
+
+  > .inner:hover {
+    border: 2px solid black;
+    box-shadow: 3px 3px 6px blue, -3px -3px 6px blue;
+  }
+}
+
+.button-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+}
