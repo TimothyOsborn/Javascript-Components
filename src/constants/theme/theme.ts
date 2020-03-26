@@ -1,9 +1,15 @@
 import JsonType from '../../../types/json';
 
+<<<<<<< HEAD
 // Themeing & colours chosen using
 // https://material.io/resources/color/#!/?view.left=0&view.right=0
 
 <<<<<<< HEAD:src/constants/theme/theme.ts
+=======
+// Themeing colours chosen using
+// https://material.io/resources/color/#!/?view.left=0&view.right=0
+
+>>>>>>> Added a little nonresponsive css to layout
 let theme: JsonType = {
   PRIMARY_LIGHT: '#60ad5e',
   PRIMARY: '#2e7d32',
@@ -18,6 +24,7 @@ let theme: JsonType = {
   BACKGROUND_PRIMARY: '#f5f5f5',
   BACKGROUND_WARM: '#fffaf1',
   BACKGROUND_DARK: '#c2c2c2',
+<<<<<<< HEAD
 =======
 let colours: JsonType = {
   RED: '#c62828',
@@ -40,6 +47,8 @@ let colours: JsonType = {
   GREY: '#757575',
   BLUEGREY: '#455a64',
 >>>>>>> Working on Button Component, will start branching for next component:src/constants/colours.ts
+=======
+>>>>>>> Added a little nonresponsive css to layout
 };
 
 export default theme;
