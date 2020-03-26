@@ -1,0 +1,84 @@
+@mixin borderfill {
+  > .fill {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.flex-grid--nonresponsive {
+  display: flex;
+  margin: 10px;
+  > .col-1 {
+    flex-grow: 1;
+    @include borderfill;
+  }
+
+  > .col-2 {
+    flex-grow: 2;
+    @include borderfill;
+  }
+
+  > .col-3 {
+    flex-grow: 3;
+    @include borderfill;
+  }
+
+  > .col-4 {
+    flex-grow: 4;
+    @include borderfill;
+  }
+
+  > .col-5 {
+    flex-grow: 5;
+    @include borderfill;
+  }
+
+  > .col-6 {
+    flex-grow: 6;
+    @include borderfill;
+  }
+
+  > .col-7 {
+    flex-grow: 7;
+    @include borderfill;
+  }
+
+  > .col-8 {
+    flex-grow: 8;
+    @include borderfill;
+  }
+
+  > .col-9 {
+    flex-grow: 9;
+    @include borderfill;
+  }
+
+  > .col-10 {
+    flex-grow: 10;
+    @include borderfill;
+  }
+
+  > .col-11 {
+    flex-grow: 11;
+    @include borderfill;
+  }
+
+  > .col-12 {
+    flex-grow: 12;
+    @include borderfill;
+  }
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+
+  > .col-3 {
+    width: 32%;
+    @include borderfill;
+  }
+}
