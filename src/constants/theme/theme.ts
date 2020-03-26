@@ -1,4 +1,4 @@
-import JsonType from '../../types/json';
+import JsonType from '../../../types/json';
 
 // Themeing colours chosen using
 // https://material.io/resources/color/#!/?view.left=0&view.right=0

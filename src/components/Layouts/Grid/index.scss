@@ -1,0 +1,107 @@
+@mixin borderfill {
+  > .fill {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@mixin grid-columns($size) {
+  > .col-#{$size}-1 {
+    width: 8%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-2 {
+    width: 16%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-3 {
+    width: 24%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-4 {
+    width: 32%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-5 {
+    width: 40%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-6 {
+    width: 48%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-7 {
+    width: 56%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-8 {
+    width: 64%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-9 {
+    width: 72%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-10 {
+    width: 80%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-11 {
+    width: 88%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+
+  > .col-#{$size}-12 {
+    width: 96%;
+    margin: 10px 0px;
+    @include borderfill;
+  }
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include grid-columns(xs);
+
+  @media screen and (min-width: 800px) {
+    @include grid-columns(sm);
+  }
+
+  @media screen and (min-width: 1000px) {
+    @include grid-columns(md);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid-columns(lg);
+  }
+
+  @media screen and (min-width: 1300px) {
+    @include grid-columns(xl);
+  }
+}
