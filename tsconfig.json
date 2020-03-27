@@ -14,8 +14,8 @@
     "./src/components/Buttons/index.ts",
     "./src/components/Layouts/Grid/index.ts",
     "./src/index.ts",
-    "./src/constants/constants.ts",
-    "./src/constants/colours.ts",
-    "./src/constants/theme.ts"
+    "./src/constants/constants/constants.ts",
+    "src/constants/colours/colours.ts",
+    "src/constants/theme/theme.ts"
   ]
 }

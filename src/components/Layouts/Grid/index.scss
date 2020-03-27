@@ -3,82 +3,105 @@
     border: 2px solid black;
     height: 100%;
     width: 100%;
+    margin: 10px 0px;
   }
 }
 
-.flex-grid--nonresponsive {
-  display: flex;
-  margin: 10px;
-  > .col-1 {
-    flex-grow: 1;
+@mixin grid-columns($size) {
+  > .col-#{$size}-1 {
+    width: 8%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-2 {
-    flex-grow: 2;
+  > .col-#{$size}-2 {
+    width: 16%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-3 {
-    flex-grow: 3;
+  > .col-#{$size}-3 {
+    width: 24%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-4 {
-    flex-grow: 4;
+  > .col-#{$size}-4 {
+    width: 32%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-5 {
-    flex-grow: 5;
+  > .col-#{$size}-5 {
+    width: 40%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-6 {
-    flex-grow: 6;
+  > .col-#{$size}-6 {
+    width: 48%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-7 {
-    flex-grow: 7;
+  > .col-#{$size}-7 {
+    width: 56%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-8 {
-    flex-grow: 8;
+  > .col-#{$size}-8 {
+    width: 64%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-9 {
-    flex-grow: 9;
+  > .col-#{$size}-9 {
+    width: 72%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-10 {
-    flex-grow: 10;
+  > .col-#{$size}-10 {
+    width: 80%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-11 {
-    flex-grow: 11;
+  > .col-#{$size}-11 {
+    width: 88%;
+    margin: 10px 0px;
     @include borderfill;
   }
 
-  > .col-12 {
-    flex-grow: 12;
+  > .col-#{$size}-12 {
+    width: 96%;
+    margin: 10px 0px;
     @include borderfill;
   }
 }
 
 .flex-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px;
 
-  > .col-3 {
-    width: 32%;
-    @include borderfill;
+  @include grid-columns(xs);
+
+  @media screen and (min-width: 800px) {
+    @include grid-columns(sm);
+  }
+
+  @media screen and (min-width: 1000px) {
+    @include grid-columns(md);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid-columns(lg);
+  }
+
+  @media screen and (min-width: 1300px) {
+    @include grid-columns(xl);
   }
 }
