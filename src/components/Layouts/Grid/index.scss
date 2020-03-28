@@ -1,83 +1,64 @@
-@mixin borderfill {
-  > .fill {
-    border: 2px solid black;
-    height: 100%;
-    width: 100%;
-    margin: 10px 0px;
-  }
-}
+@import './../../../constants/styles/constants.scss';
 
 @mixin grid-columns($size) {
-  > .col-#{$size}-1 {
-    width: 8%;
+  > .col-1-#{$size} {
+    width: 8.33%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-2 {
-    width: 16%;
+  > .col-2-#{$size} {
+    width: 16.66%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-3 {
-    width: 24%;
+  > .col-3-#{$size} {
+    width: 25%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-4 {
-    width: 32%;
+  > .col-4-#{$size} {
+    width: 33.33%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-5 {
-    width: 40%;
+  > .col-5-#{$size} {
+    width: 41.66%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-6 {
-    width: 48%;
+  > .col-6-#{$size} {
+    width: 50%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-7 {
-    width: 56%;
+  > .col-7-#{$size} {
+    width: 58.33%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-8 {
-    width: 64%;
+  > .col-8-#{$size} {
+    width: 66.66%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-9 {
-    width: 72%;
+  > .col-9-#{$size} {
+    width: 75%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-10 {
-    width: 80%;
+  > .col-10-#{$size} {
+    width: 83.33%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-11 {
-    width: 88%;
+  > .col-11-#{$size} {
+    width: 91.66%;
     margin: 10px 0px;
-    @include borderfill;
   }
 
-  > .col-#{$size}-12 {
-    width: 96%;
+  > .col-12-#{$size} {
+    width: 100%;
     margin: 10px 0px;
-    @include borderfill;
   }
 }
 
@@ -89,19 +70,19 @@
 
   @include grid-columns(xs);
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $screen-size-min-sm) {
     @include grid-columns(sm);
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $screen-size-min-md) {
     @include grid-columns(md);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $screen-size-min-lg) {
     @include grid-columns(lg);
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: $screen-size-min-xl) {
     @include grid-columns(xl);
   }
 }

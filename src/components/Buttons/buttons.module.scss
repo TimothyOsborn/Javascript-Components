@@ -6,8 +6,8 @@
   > .inner {
     background-color: whitesmoke;
     border: 1px solid black;
-    border-radius: 18px;
-    padding: 10px;
+    border-radius: 16px;
+    padding: 8px;
     box-shadow: 3px 3px 6px black, -3px -3px 6px black,
       3px 3px 10px lightblue inset, -5px -3px 10px lavender inset;
   }
@@ -19,7 +19,7 @@
 }
 
 .button-title {
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 400;
   color: black;
 }
