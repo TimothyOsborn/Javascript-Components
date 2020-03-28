@@ -13,7 +13,7 @@ const homepage = () => {
       </button-custom>
       <br>
       <grid-custom>
-        Blah
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
       </grid-custom>
     `;
     return element;
