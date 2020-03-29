@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;AAAA,wBAAsB;AACtB,+BAA6B;AAC7B,qCAAmC;AACnC,sCAAoC;AACpC,2CAAyC;AACzC,gDAA8C;AAE9C,MAAM,QAAQ,GAAG,GAAG,EAAE;IACpB,MAAM,OAAO,GAAG,QAAQ,CAAC,aAAa,CAAC,KAAK,CAAC,CAAC;IAC9C,OAAO,CAAC,SAAS,GAAG;;;;;;;;;;;;;;;;KAgBjB,CAAC;IACJ,OAAO,OAAO,CAAC;AACjB,CAAC,CAAC;AAEF,QAAQ,CAAC,IAAI,CAAC,WAAW,CAAC,QAAQ,EAAE,CAAC,CAAC"}
 =======
 {"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;AAAA,uBAAqB;AACrB,8BAA4B;AAC5B,qCAAmC;AACnC,sCAAoC;AAEpC,MAAM,QAAQ,GAAG,GAAG,EAAE;IACpB,MAAM,OAAO,GAAG,QAAQ,CAAC,aAAa,CAAC,KAAK,CAAC,CAAC;IAC9C,OAAO,CAAC,SAAS,CAAC,GAAG,CAAC,eAAe,CAAC,CAAC;IACvC,OAAO,CAAC,SAAS,GAAG;;;;KAIjB,CAAC;IACJ,OAAO,OAAO,CAAC;AACjB,CAAC,CAAC;AAEF,QAAQ,CAAC,IAAI,CAAC,WAAW,CAAC,QAAQ,EAAE,CAAC,CAAC"}
@@ -7,3 +8,6 @@
 =======
 {"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;AAAA,wBAAsB;AACtB,+BAA6B;AAC7B,qCAAmC;AACnC,sCAAoC;AACpC,2CAAyC;AAEzC,MAAM,QAAQ,GAAG,GAAG,EAAE;IACpB,MAAM,OAAO,GAAG,QAAQ,CAAC,aAAa,CAAC,KAAK,CAAC,CAAC;IAC9C,OAAO,CAAC,SAAS,GAAG;;;;;;;;KAQjB,CAAC;IACJ,OAAO,OAAO,CAAC;AACjB,CAAC,CAAC;AAEF,QAAQ,CAAC,IAAI,CAAC,WAAW,CAAC,QAAQ,EAAE,CAAC,CAAC"}
 >>>>>>> Added a little nonresponsive css to layout
+=======
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;AAAA,wBAAsB;AACtB,+BAA6B;AAC7B,qCAAmC;AACnC,sCAAoC;AACpC,2CAAyC;AACzC,gDAA8C;AAE9C,MAAM,QAAQ,GAAG,GAAG,EAAE;IACpB,MAAM,OAAO,GAAG,QAAQ,CAAC,aAAa,CAAC,KAAK,CAAC,CAAC;IAC9C,OAAO,CAAC,SAAS,GAAG;;;;;;;;;KASjB,CAAC;IACJ,OAAO,OAAO,CAAC;AACjB,CAAC,CAAC;AAEF,QAAQ,CAAC,IAAI,CAAC,WAAW,CAAC,QAAQ,EAAE,CAAC,CAAC"}
+>>>>>>> adjusted button styles to be more subtle, added margin to separator. TODO add style guide and git commit message structure
