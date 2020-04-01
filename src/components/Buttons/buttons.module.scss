@@ -4,22 +4,18 @@
   width: max-content;
 
   > .inner {
-    background-color: whitesmoke;
-    border: 1px solid black;
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 1px 1px 2px darkgrey, -1px -1px 2px darkgrey,
-      1px 1px 2px lightblue inset, -1px -1px 2px lavender inset;
+    box-shadow: 0 0 8px #3a3a3a inset;
   }
 
   > .inner:hover {
-    border: 1px solid black;
-    box-shadow: 1px 2px 2px cornflowerblue, -1px -2px 2px cornflowerblue;
+    box-shadow: 0 0 3px cornflowerblue inset;
   }
 }
 
 .button-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
 }
