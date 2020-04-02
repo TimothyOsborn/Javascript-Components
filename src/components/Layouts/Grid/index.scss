@@ -1,4 +1,4 @@
-@import './../../../constants/styles/constants.scss';
+@import '../../../constants/constants/constants.scss';
 
 @mixin grid-columns($size) {
   > .col-1-#{$size} {
