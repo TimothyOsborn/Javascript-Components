@@ -1,3 +1,5 @@
+@import '../../constants/theme/theme.module.scss';
+
 .container-button {
   display: flex;
   flex-direction: column;
@@ -6,11 +8,11 @@
   > .inner {
     border-radius: 8px;
     padding: 8px;
-    box-shadow: 0 0 8px #3a3a3a inset;
+    box-shadow: 0 0 4px $background-dark;
   }
 
   > .inner:hover {
-    box-shadow: 0 0 3px cornflowerblue inset;
+    box-shadow: 0 0 8px $primary-dark;
   }
 }
 
