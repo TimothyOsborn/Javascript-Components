@@ -13,8 +13,15 @@ const homepage = () => {
         Hello button
       </button-custom>
       <ui-seperator></ui-seperator>
+      <ui-seperator-whitespace></ui-seperator-whitespace>
+      <ui-seperator></ui-seperator>
       <br>
       <grid-custom>
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
+        <div class="col-12-xs col-6-sm col-4-lg">blah</div>
         <div class="col-12-xs col-6-sm col-4-lg">blah</div>
       </grid-custom>
     `;
