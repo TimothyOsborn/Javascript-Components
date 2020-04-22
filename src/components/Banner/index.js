@@ -17,11 +17,21 @@ class BannerElement extends HTMLElement {
     }
     connectedCallback() {
         setTimeout(() => (this.innerHTML = `
+<<<<<<< HEAD
         <div class="container">
           <h3>${this.getAttribute('cat')}</h3>
           <h2>${this.initialText}</h2>
           <h1>${this.initialHTML}</h1>
           <h4>${this.hasAttribute('dog') ? 'pineapple' : 'pizza'}</h4>
+<<<<<<< HEAD
+=======
+        <div>
+          <h3>${this.getAttribute('cat')}</h3>
+          <h2>${this.initialText}</h2>
+          <h1>${this.initialHTML}</h1>
+>>>>>>> added sample test html against banner component
+=======
+>>>>>>> Working on Button Component, will start branching for next component
         </div>
         `));
     }
