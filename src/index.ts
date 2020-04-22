@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './index.scss';
 import './index.module.scss';
 import './components/Banner/index';
@@ -23,6 +24,18 @@ const homepage = () => {
         <div class="col-12-xs col-6-sm col-4-lg">blah</div>
         <div class="col-12-xs col-6-sm col-4-lg">blah</div>
       </grid-custom>
+=======
+import * as _ from 'lodash';
+import './index.css';
+import './index.module.css';
+
+const homepage = () => {
+  const element = document.createElement('div');
+  element.classList.add('testing-class');
+  element.innerHTML = `
+    <h1>Using JS Entry Point</h1>
+    <h3>${_.join(['Hello', 'World'], ' ')}
+>>>>>>> Added initial webpack config and testing
     `;
   return element;
 };
