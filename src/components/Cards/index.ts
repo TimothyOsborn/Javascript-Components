@@ -3,6 +3,9 @@ import './card.module.scss';
 class CardElement extends HTMLElement {
   onClick: string;
   title: string;
+  image: string | object | null;
+  content: string;
+
   static get observedAttributes() {
     return ['title'];
   }
@@ -13,13 +16,9 @@ class CardElement extends HTMLElement {
       this.title = this.getAttribute('title');
       this.onClick = this.getAttribute('action');
       this.addEventListener('click', () => this.onClickHandler());
+      this.content = this.getAttribute('content');
+      this.image = this.getAttribute('image');
     });
-  }
-
-  attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    if (name === 'title' && oldValue !== null && oldValue !== newValue) {
-      this.connectedCallback();
-    }
   }
 
   onClickHandler() {
@@ -29,7 +28,7 @@ class CardElement extends HTMLElement {
   connectedCallback() {
     setTimeout(() => {
       this.innerHTML = `
-        <div class="container-button">
+        <div class="card">
           <div class="inner button-title">
             ${this.title}
           </div>
