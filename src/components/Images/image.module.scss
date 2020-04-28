@@ -1,0 +1,14 @@
+@import '../../constants/theme/theme.module.scss';
+@import '../../constants/constants/constants.module.scss';
+
+.ui-image__container {
+  width: 100%;
+
+  img {
+    margin: 2.5%;
+    object-fit: contain;
+    width: 95%;
+    height: 95%;
+    border: thin solid $border-dark;
+  }
+}
