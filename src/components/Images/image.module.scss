@@ -1,0 +1,11 @@
+@import '../../constants/theme/theme.module.scss';
+@import '../../constants/constants/constants.module.scss';
+
+.ui-image__container {
+  width: 100%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

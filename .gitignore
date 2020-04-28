@@ -105,3 +105,6 @@ dist
 
 # Package Locks
 package-lock.json
+
+# Derived JS and js.map files
+src/*/*.js
