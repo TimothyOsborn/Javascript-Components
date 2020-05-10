@@ -5,10 +5,7 @@
   width: 100%;
 
   img {
-    margin: 2.5%;
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-    border: thin solid $border-dark;
+    width: 100%;
+    object-fit: cover;
   }
 }

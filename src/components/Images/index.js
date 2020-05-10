@@ -14,7 +14,7 @@ class ImageElement extends HTMLElement {
     connectedCallback() {
         setTimeout(() => {
             this.innerHTML = `
-        <div class="container-image ${this.classes !== null ? this.classes : ''}">
+        <div class="ui-image__container ${this.classes !== null ? this.classes : ''}">
           <img src="${this.src}" alt="${this.alt}" ${this.arias}/>
         </div>
         `;

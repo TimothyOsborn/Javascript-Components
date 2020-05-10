@@ -1,6 +1,6 @@
 import './image.module.scss';
 
-class ImageElement extends HTMLImageElement {
+class ImageElement extends HTMLElement {
   alt: string;
   src: string;
   classes: string;
