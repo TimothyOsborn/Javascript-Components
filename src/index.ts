@@ -5,6 +5,7 @@ import './components/Buttons/index';
 import './components/Layouts/Grid/index';
 import './components/Layouts/Seperator/index';
 import './components/Images/index';
+import './components/Typography/index';
 
 const homepage = () => {
   const element = document.createElement('div');
@@ -20,10 +21,11 @@ const homepage = () => {
         <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
         <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
         <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
-        <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
-        <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
-        <div class="col-12-xs col-6-sm col-4-lg"><ui-image alt="blah" src="https://vignette.wikia.nocookie.net/mahousenseinegima/images/1/1a/Card_nodoka.jpg"></ui-images></div>
       </grid-custom>
+      <ui-typography>
+        <p>P style, The quick brown fox jumps over the lazy dog.</p>
+        <div><p>P style, The quick brown fox jumps over the lazy dog.</p></div>
+      </ui-typography>
     `;
   return element;
 };
