@@ -39,7 +39,7 @@ Open Source library of commonly used core javascript components for ease of maki
   - [x] Grid layout
   - [ ] Sections
   - [x] Seperator
-  - [ ] White Space Seperator
+  - [x] White Space Seperator
 - Maps
   - [ ] Map, interactive
   - [ ] Map, address
@@ -61,6 +61,5 @@ Open Source library of commonly used core javascript components for ease of maki
   - [ ] Twitter
 - Tables
   - TODO: Decide on table's
-- [ ] Typography
-  - [ ] Headings
-  - [ ] Labels
+- Typography
+  - [x] Text
