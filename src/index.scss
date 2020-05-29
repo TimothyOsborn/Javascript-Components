@@ -1,8 +1,5 @@
-.testing-class {
-  display: flex;
-  height: 200px;
-  justify-content: center;
-  background-color: blue;
-  width: 100%;
-  align-content: center;
+@import './constants/theme/theme.scss';
+
+body {
+  background-color: $global-background-light;
 }
