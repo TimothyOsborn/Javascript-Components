@@ -2,7 +2,7 @@
 @import '../../constants/constants/constants.module.scss';
 
 .ui-image__container {
-  width: 100%;
+  width: inherit;
 
   img {
     width: 100%;
