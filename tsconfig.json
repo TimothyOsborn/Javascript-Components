@@ -12,7 +12,7 @@
   "files": [
     "./src/components/Banner/index.ts",
     "./src/components/Buttons/index.ts",
-    "./src/components/Layouts/Grid/index.ts",
+    "./src/Layouts/Grid/index.ts",
     "./src/index.ts",
     "./src/constants/constants/constants.ts",
     "src/constants/colours/colours.ts",

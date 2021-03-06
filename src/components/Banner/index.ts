@@ -1,38 +1,17 @@
+import './banner.module.scss';
+
 class BannerElement extends HTMLElement {
-  initialHTML: string;
-  initialText: string;
-
-  constructor() {
-    super();
-    setTimeout(() => {
-      this.initialHTML = this.innerHTML;
-      this.initialText = this.innerText;
-    });
-  }
-
-  attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    console.log('in attributechangedcallback', name, oldValue, newValue);
-    if (name === 'cat' && oldValue !== null && oldValue !== newValue) {
-      console.log('checking before clearing', this.innerHTML, this.innerText);
-      this.innerHTML = '';
-      this.connectedCallback();
-      console.log('checking after clearing', this.innerHTML, this.innerText);
-    }
-  }
-
   connectedCallback() {
+    this.classList.add('ui-banner__container');
     setTimeout(
       () =>
         (this.innerHTML = `
-        <div class="container">
-          <h3>${this.getAttribute('cat')}</h3>
-          <h2>${this.initialText}</h2>
-          <h1>${this.initialHTML}</h1>
-          <h4>${this.hasAttribute('dog') ? 'pineapple' : 'pizza'}</h4>
+        <div class="ui-banner__container">
+          ${this.innerHTML}
         </div>
         `),
     );
   }
 }
 
-customElements.define('banner-custom', BannerElement);
+customElements.define('ui-banner', BannerElement);
