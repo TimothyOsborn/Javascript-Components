@@ -1,0 +1,10 @@
+.seperator {
+  width: 90%;
+  background-color: grey;
+  height: thin;
+  margin: 16px 5%;
+}
+.seperator.whitespace {
+  background-color: transparent;
+  padding: 16px;
+}

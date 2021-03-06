@@ -1,0 +1,76 @@
+@import '../../constants/constants/constants.module.scss';
+
+@mixin grid-columns($size) {
+  > .col-1-#{$size} {
+    width: 8.33%;
+  }
+
+  > .col-2-#{$size} {
+    width: 16.66%;
+  }
+
+  > .col-3-#{$size} {
+    width: 25%;
+  }
+
+  > .col-4-#{$size} {
+    width: 33.33%;
+  }
+
+  > .col-5-#{$size} {
+    width: 41.66%;
+  }
+
+  > .col-6-#{$size} {
+    width: 50%;
+  }
+
+  > .col-7-#{$size} {
+    width: 58.33%;
+  }
+
+  > .col-8-#{$size} {
+    width: 66.66%;
+  }
+
+  > .col-9-#{$size} {
+    width: 75%;
+  }
+
+  > .col-10-#{$size} {
+    width: 83.33%;
+  }
+
+  > .col-11-#{$size} {
+    width: 91.66%;
+  }
+
+  > .col-12-#{$size} {
+    width: 100%;
+  }
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include grid-columns(xs);
+
+  @media screen and (min-width: $screen-size-min-sm) {
+    @include grid-columns(sm);
+  }
+
+  @media screen and (min-width: $screen-size-min-md) {
+    @include grid-columns(md);
+  }
+
+  @media screen and (min-width: $screen-size-min-lg) {
+    @include grid-columns(lg);
+  }
+
+  @media screen and (min-width: $screen-size-min-xl) {
+    @include grid-columns(xl);
+  }
+}

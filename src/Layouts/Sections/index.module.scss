@@ -1,0 +1,13 @@
+.section {
+  max-width: 1300px;
+
+  &.sm {
+    padding: 16px;
+  }
+  &.md {
+    padding: 32px;
+  }
+  &.lg {
+    padding: 64px;
+  }
+}
